@@ -2,13 +2,13 @@ all:
   children:
     servidores_web:
       hosts:
-        nombre_de_la_primera_maquina: 
-          ansible_ssh_host: 
-          ansible_ssh_user: 
-          ansible_ssh_private_key_file:
+        IvanR-Apache2: 
+          ansible_ssh_host: 172.22.9.35
+          ansible_ssh_user: debian 
+          ansible_ssh_private_key_file: /home/ivanruiperez/.ssh/id_rsa
     servidores_bd:
       hosts:
-        nombre_de_la_segunda_maquina: 
-          ansible_ssh_host:
-          ansible_ssh_user:
-          ansible_ssh_private_key_file:
+        IvanR-MariaDB: 
+          ansible_ssh_host: 172.22.9.36
+          ansible_ssh_user: debian
+          ansible_ssh_private_key_file: /home/ivanruiperez/.ssh/id_rsa
